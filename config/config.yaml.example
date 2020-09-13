@@ -1,3 +1,6 @@
+global:
+  listenPort: "9091"
+
 auth:
   github:
     githubClientId: ""

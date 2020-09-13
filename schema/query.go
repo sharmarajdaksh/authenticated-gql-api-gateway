@@ -11,7 +11,7 @@ var RootQuery = graphql.NewObject(
 		Name:        "RootQuery",
 		Description: "Root of the API Schema",
 		Fields: graphql.Fields{
-			"auth": auth.OAuthURLQuery,
+			"auth": auth.AuthQuery,
 		},
 	},
 )

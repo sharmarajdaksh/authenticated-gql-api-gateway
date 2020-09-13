@@ -47,10 +47,9 @@ var authType = graphql.NewObject(
 	},
 )
 
-// OAuthURLQuery Field
-var OAuthURLQuery = &graphql.Field{
+// AuthQuery Field
+var AuthQuery = &graphql.Field{
 	Type: authType,
-	// Type: graphql.String,
 	Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 		return &Auth{}, nil
 	},

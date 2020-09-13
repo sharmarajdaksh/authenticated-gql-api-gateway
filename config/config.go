@@ -5,6 +5,9 @@ import (
 )
 
 type config struct {
+	Global struct {
+		ListenPort string `fig:"listenPort" default:"9091"`
+	}
 	Auth struct {
 		Github struct {
 			GithubClientID         string `fig:"githubClientId" validate:"required"`
