@@ -6,7 +6,7 @@ import (
 )
 
 // RootQuery represents the root query object for the API Schema
-var RootQuery = graphql.NewObject(
+var rootQuery = graphql.NewObject(
 	graphql.ObjectConfig{
 		Name:        "RootQuery",
 		Description: "Root of the API Schema",

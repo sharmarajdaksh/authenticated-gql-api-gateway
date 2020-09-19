@@ -8,3 +8,11 @@ auth:
     githubOauthLoginUrl: "https://github.com/login/oauth/authorize"
     githubOauthTokenUrl: "https://github.com/login/oauth/access_token"
     githubOauthUserdataUrl: "https://api.github.com/user"
+
+database:
+  postgres:
+    postgresHost: "127.0.0.1"
+    postgresConnectionPort: "9920"
+    postgresUsername: "postgres"
+    postgresPassword: "postgres"
+    postgresDatabaseName: "postgres"

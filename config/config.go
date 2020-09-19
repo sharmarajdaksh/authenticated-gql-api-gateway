@@ -17,6 +17,15 @@ type config struct {
 			GithubOauthUserdataURL string `fig:"githubOauthUserdataUrl" default:"https://api.github.com/user"`
 		}
 	}
+	Database struct {
+		Postgres struct {
+			PostgresHost           string `fig:"postgresHost" default:"127.0.0.1"`
+			PostgresConnectionPort string `fig:"postgresConnectionPort" default:"9920"`
+			PostgresUsername       string `fig:"postgresUsername" default:"postgres"`
+			PostgresPassword       string `fig:"postgresPassword" default:"postgres"`
+			PostgresDatabaseName   string `fig:"postgresDatabaseName" default:"postgres"`
+		}
+	}
 }
 
 // C represents a global config object

@@ -7,7 +7,7 @@ import (
 // Schema root for API Gateway
 var Schema, _ = graphql.NewSchema(
 	graphql.SchemaConfig{
-		Query:    RootQuery,
-		Mutation: nil,
+		Query: rootQuery,
+		// Mutation: rootMutation,
 	},
 )
